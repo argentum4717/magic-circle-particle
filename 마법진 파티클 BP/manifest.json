@@ -1,0 +1,31 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "파티클 튜토리얼",
+        "name": "마법진 파티클 스크립트",
+        "uuid": "79d61000-f6a4-4b3e-8731-02a829f513b6",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 21, 0]
+    },
+    "modules": [
+        {
+            "description": "파티클 튜토리얼",
+            "type": "data",
+            "uuid": "0f07ddb0-5c99-4e4f-b31f-6373db66ee30",
+            "version": [1, 0, 0]
+        },
+        {
+            "type": "script",
+            "language": "javascript",
+            "uuid": "ad5477f7-192c-43d0-91ed-ef5896972cad",
+            "version": [1, 0, 0],
+            "entry": "scripts/main.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.16.0"
+        }
+    ]
+}

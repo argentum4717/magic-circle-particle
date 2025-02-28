@@ -1,0 +1,18 @@
+{
+ "format_version": 2,
+ "header": {
+   "description": "파티클 튜토리얼",
+   "name": "마법진 파티클",
+   "uuid": "2ad1c849-69d3-4d2e-a4f1-3a52e6fdeefe",
+   "version": [1, 0, 0],
+   "min_engine_version": [1, 21, 0]
+  },
+ "modules": [
+   {
+     "description": "파티클 튜토리얼",
+     "type": "resources",
+     "uuid": "31afc42e-df1b-4d1f-9d9b-bfdfd2f7b6b8",
+     "version": [1, 0, 0]
+   }
+ ]
+}
