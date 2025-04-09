@@ -1,8 +1,19 @@
 import { world, MolangVariableMap, system } from "@minecraft/server";
 
-function spawnMagicCircle(player, angle, angle2) {
+//파타클 생성 함수
+function spawnMagicCircle(player, rawAngle, angle2) {
+	let angle = null;
+	
+	if(rawAngle >= 0 && rawAngle <= 2) {
+		angle = 3;
+	} else if(rawAngle >= -2 && rawAngle <= -1) {
+		angle = -3;
+	} else {
+		angle = rawAngle;
+	}
+
 	const degToRad = Math.PI/180;
-	const radAngle = angle * degToRad;
+	const radAngle = rawAngle * degToRad;
 	const radAngle2 = angle2 * degToRad;
 	
 	let location = null;
@@ -28,6 +39,7 @@ function spawnMagicCircle(player, angle, angle2) {
 	}
 }
 
+//아이템 사용 시 파티클 소환하는 코드
 world.afterEvents.itemUse.subscribe(event => {
 	const { source, itemStack } = event;
 	
